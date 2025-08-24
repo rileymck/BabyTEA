@@ -35,7 +35,7 @@ Before you begin, ensure you have Python3 installed on your computer. You can do
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/CS3250-final-project/Final-project.git
+git clone https://github.com/rileymck/BabyTEA.git
 
 ```
 
