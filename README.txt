@@ -28,10 +28,8 @@ Decryption:
 
 ## Installation
 
-To get started with BankBuddy, follow these steps to set up the environment and run the application on your local machine.
-
 ### Prerequisites
-Before you begin, ensure you have Python3 installed on your computer. You can download Python3 from [python.org](https://www.python.org/downloads/).
+Before you begin, ensure you have Java 8+ installed on your computer
 
 ### 1. Clone the Repository
 ```bash
