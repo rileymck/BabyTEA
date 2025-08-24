@@ -1,0 +1,9 @@
+Please input K[0] in Hex String(without 0x): 
+Please input K[1] in Hex String(without 0x): 
+Please input K[2] in Hex String(without 0x): 
+Please input K[3] in Hex String(without 0x): 
+Please input L[0] in Hex String(without 0x): 
+Please input R[0] in Hex String(without 0x): 
+L[0]: a0000009     R[0]: 8000006b
+L[1]: 8000006b     R[1]: b72599b2
+L[2]: b72599b2     R[2]: cf8e5a4c

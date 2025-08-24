@@ -1,0 +1,1 @@
+On both programs it will prompt you to enter k0-k3 and then it will ask you for either l0 and r0(encryption) or it will ask for l2 and r2(decryption). When all those numbers are inputed it will show the end result in the terminal, and if you go to tst_Encryption.txt or tst_Decryption.txt it will show you there too.
