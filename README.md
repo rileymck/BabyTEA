@@ -14,16 +14,16 @@ This project is a collaborative effort by a team of six students from the CS3250
 
 Encryption:
 
-- **Splits a 64 bit plaintext block into 2 halves: L[0] and R[0]
-- **Uses a 128 bit key: K[0]...K[3] and 2 fixed constants: delta1 and delta2
-- **Runs 2 Feistel rounds, where the right half goes through a custom round function F that combines shifts, additions, and XOR wiht key material
-- **Produces a 64 bit ciphertext block: L[2] and R[2]
+- Splits a 64 bit plaintext block into 2 halves: L[0] and R[0]
+- Uses a 128 bit key: K[0]...K[3] and 2 fixed constants: delta1 and delta2
+- Runs 2 Feistel rounds, where the right half goes through a custom round function F that combines shifts, additions, and XOR wiht key material
+- Produces a 64 bit ciphertext block: L[2] and R[2]
 
 Decryption:
 
-- **Accepts the same 128 bit key and the cipher halves: L[2] and R[2]
-- **Runs the Feistel rounds in reverse, using subtraction instead of adition to invert the process
-- **Recovers the original plaintext block L[0] and R[0]
+- Accepts the same 128 bit key and the cipher halves: L[2] and R[2]
+- Runs the Feistel rounds in reverse, using subtraction instead of adition to invert the process
+- Recovers the original plaintext block L[0] and R[0]
 
 
 ## Installation
