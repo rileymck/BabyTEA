@@ -1,1 +1,60 @@
-On both programs it will prompt you to enter k0-k3 and then it will ask you for either l0 and r0(encryption) or it will ask for l2 and r2(decryption). When all those numbers are inputed it will show the end result in the terminal, and if you go to tst_Encryption.txt or tst_Decryption.txt it will show you there too.
+# BabyTEA
+
+Simplified Feistel block cipher that demonstrates how encryption and decryption mirror each other using shifts, additions, XOR, and key mixing
+
+
+## Contributors
+
+This project is a collaborative effort by a team of six students from the CS3250 class of Group 2:
+
+- Riley McKenzie
+- Elicia Perez
+
+## Description
+
+Encryption:
+
+- **Splits a 64 bit plaintext block into 2 halves: L[0] and R[0]
+- **Uses a 128 bit key: K[0]...K[3] and 2 fixed constants: delta1 and delta2
+- **Runs 2 Feistel rounds, where the right half goes through a custom round function F that combines shifts, additions, and XOR wiht key material
+- **Produces a 64 bit ciphertext block: L[2] and R[2]
+
+Decryption:
+
+- **Accepts the same 128 bit key and the cipher halves: L[2] and R[2]
+- **Runs the Feistel rounds in reverse, using subtraction instead of adition to invert the process
+- **Recovers the original plaintext block L[0] and R[0]
+
+
+## Installation
+
+To get started with BankBuddy, follow these steps to set up the environment and run the application on your local machine.
+
+### Prerequisites
+Before you begin, ensure you have Python3 installed on your computer. You can download Python3 from [python.org](https://www.python.org/downloads/).
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/CS3250-final-project/Final-project.git
+
+```
+
+### 2. Compile the program
+Make sure you have Java 8+ installed
+``` bash
+javac encryption.java decryption.java
+```
+
+### 3. Run the Encryption
+``` bash
+java encryption
+```
+
+### 4. Run the Decryption
+``` bash 
+java decryption
+```
+
+## Notes
+- Inputs must be 8 digit hexadecimal string
+- Keys and data are 32 bit words, combined into a 128 bit key and 64 bit blocks
